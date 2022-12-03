@@ -34,7 +34,7 @@ on:
         type: choice
         options:
         - 1.19.1
-        - 1.18
+        - 1.18.0
         - 1.19.2
 
 jobs:
@@ -61,4 +61,3 @@ jobs:
 
       # - name: Test
       #   run: go test -v ./...
-Write to Alex Mkoyan
