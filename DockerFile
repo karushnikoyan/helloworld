@@ -1,0 +1,5 @@
+FROM golang:latest
+
+COMY . .
+
+CMD ["go" , "run" , "main.go"]
