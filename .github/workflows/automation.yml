@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: buil part to docker    
-        run: docker build -t karush/go-training/helloworld .
+        run: docker build -t /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin.
       - name: push to docker hub
         uses: docker/build-push-action@v2
         with:
