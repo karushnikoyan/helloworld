@@ -12,8 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Build the Docker image
-        run: docker build -t karush/go-app .
+     # - name: Build the Docker image
+      #  run: docker build -t karush/go-app .
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2
         with:
