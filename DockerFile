@@ -1,5 +1,5 @@
 FROM golang:latest
 
-COMY . .
+COPY . .
 
 CMD ["go" , "run" , "main.go"]
