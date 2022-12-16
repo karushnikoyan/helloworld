@@ -7,7 +7,10 @@ jobs:
   build_and_push_to_docker:
     runs-on: ubuntu-latest
   
-    steps:
+    steps: 
+      - name: buil part to docker    
+        run: docker build -t /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin.
+
       - uses: actions/checkout@v3        
       - name: push to docker hub        
         uses: docker/build-push-action@v2         
